@@ -46,6 +46,7 @@ func player(name string, court chan int) {
 		}
 		//pick a random number and see if we miss the ball
 		n := rand.Intn(100)
+
 		if n%13 == 0 {
 			fmt.Printf("Player %s Missed\n", name)
 
